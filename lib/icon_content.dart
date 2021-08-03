@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const TextStyle labelTextStyle = TextStyle(
   fontSize: 18,
-  color: Color(0xFF8D8E98),
+  color: Colors.white, //Color(0xFF8D8E98),
 );
 
 class ReusableWidgetContent extends StatelessWidget {

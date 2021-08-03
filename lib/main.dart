@@ -5,9 +5,9 @@ import 'icon_content.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const double bottomContainerHeight = 40.0;
-const Color reusableColor = Color(0xFF1D1E33);
+const ColorinactiveCardColor = Color(0xFF1D1E33);
 const Color bottomContainerColor = Color(0xFFEB1555);
-const Color inactiveCardColor = Color(0XFF111328);
+const Color inactiveCardColor = Colors.teal; //Color(0XFF111328);
 const Color activeCardColor = Color(0xFF1D1E33);
 
 void main() {
@@ -42,25 +42,23 @@ class HomePage extends StatelessWidget {
           color: Colors.teal,
           size: 100,
         ),
-        title: Center(
-          child: Column(
-            children: [
-              Text(
-                '07483 717171',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.teal.shade700,
-                ),
+        title: Column(
+          children: [
+            Text(
+              '07483 717171',
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.teal.shade700,
               ),
-              Text(
-                'Apple iPhone 12 Pro Max',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.teal.shade700,
-                ),
-              )
-            ],
-          ),
+            ),
+            Text(
+              'Apple iPhone 12 Pro Max',
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.teal.shade700,
+              ),
+            )
+          ],
         ),
       ),
       body: Center(
@@ -82,7 +80,7 @@ class HomePage extends StatelessWidget {
                         colour: inactiveCardColor,
                         cardChild: ReusableWidgetContent(
                           icon: FontAwesomeIcons.mars,
-                          label: 'MALE',
+                          label: 'Mobile',
                         ),
                       ),
                     ),
@@ -98,7 +96,7 @@ class HomePage extends StatelessWidget {
                         colour: inactiveCardColor,
                         cardChild: ReusableWidgetContent(
                           icon: FontAwesomeIcons.venus,
-                          label: 'FEMALE',
+                          label: 'Broadband',
                         ),
                       ),
                     ),
@@ -108,7 +106,7 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: ReusableWidget(
-                colour: reusableColor,
+                colour: inactiveCardColor,
               ),
             ),
             Expanded(
@@ -117,14 +115,14 @@ class HomePage extends StatelessWidget {
                 children: [
                   Expanded(
                     child: ReusableWidget(
-                      colour: reusableColor,
+                      colour: inactiveCardColor,
                     ),
                   ),
                   Expanded(
                     child: Container(
                       margin: EdgeInsets.all(15),
                       decoration: BoxDecoration(
-                        color: reusableColor,
+                        color: inactiveCardColor,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       // height: 200,

@@ -7,7 +7,6 @@ class NavDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      
       child: ListView(
         padding: EdgeInsets.only(top: 10),
         children: [
@@ -67,7 +66,7 @@ class NavDrawer extends StatelessWidget {
                                 fontStyle: FontStyle.normal,
                               ),
                             ),
-                            // onTap: _launchURL,
+                            onTap: _launchURL,
                           ),
                         ],
                       ),
